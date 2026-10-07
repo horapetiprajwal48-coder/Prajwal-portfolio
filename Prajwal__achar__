@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prajwal Achar | Visual Diary & Photography</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              gold: '#e0a96d',
+              charcoal: '#141416',
+              surface: '#1b1b1e',
+              border: '#2c2c31',
+              muted: '#8b8b93'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass {
+      background: rgba(20, 20, 22, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .grain {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-brand-charcoal text-slate-100 font-sans selection:bg-brand-gold selection:text-black grain antialiased">
+
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 inset-x-0 z-40 glass border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 font-bold tracking-tight text-lg text-white">
+        <span class="w-2.5 h-2.5 rounded-full bg-brand-gold"></span>
+        <span>prajwal__achar__</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#gallery" class="hover:text-white transition">Gallery</a>
+        <a href="#expeditions" class="hover:text-white transition">Expeditions</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
+
+      <a href="https://www.instagram.com/prajwal__achar__" target="_blank" rel="noopener noreferrer" 
+         class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-black bg-brand-gold rounded-full hover:brightness-110 transition shadow-sm">
+        <i data-lucide="instagram" class="w-4 h-4"></i>
+        <span>Follow</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="pt-32 pb-16 px-6 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+      <!-- Profile Snapshot -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="relative group">
+          <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-brand-gold/40 to-slate-700 opacity-60 blur-lg transition duration-500 group-hover:opacity-90"></div>
+          <div class="relative w-64 h-80 rounded-2xl overflow-hidden border border-brand-border bg-brand-surface shadow-2xl">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" 
+                 alt="Prajwal Achar" 
+                 class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition duration-700 ease-out">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4">
+              <span class="text-xs font-mono uppercase tracking-wider text-brand-gold">Creator & Photographer</span>
+              <h2 class="text-xl font-bold text-white leading-tight">Prajwal Achar</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio / Headline -->
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono bg-brand-surface border border-brand-border text-slate-300">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-gold"></i>
+          <span>Bengaluru & Trails Beyond</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
+          Documenting the wild, the tarmac, and the quiet light.
+        </h1>
+
+        <p class="text-slate-400 text-base leading-relaxed max-w-xl">
+          A personal collection of frames captured along misty ridge lines, highway journeys, and spontaneous morning runs. Every picture is a notebook entry of altitude, weather, and light.
+        </p>
+
+        <!-- Stats Counter -->
+        <div class="grid grid-cols-3 gap-4 pt-4 border-t border-brand-border/60">
+          <div>
+            <div class="text-2xl font-mono font-bold text-white">40+</div>
+            <div class="text-xs text-brand-muted uppercase tracking-wider mt-0.5">Summits & Treks</div>
+          </div>
+          <div>
+            <div class="text-2xl font-mono font-bold text-white">10k+</div>
+            <div class="text-xs text-brand-muted uppercase tracking-wider mt-0.5">KM on Saddle</div>
+          </div>
+          <div>
+            <div class="text-2xl font-mono font-bold text-white">35mm</div>
+            <div class="text-xs text-brand-muted uppercase tracking-wider mt-0.5">Primary Vision</div>
+          </div>
+        </div>
+
+        <div class="pt-2 flex flex-wrap gap-4">
+          <a href="#gallery" class="px-5 py-2.5 rounded-lg bg-white text-black font-semibold text-sm hover:bg-slate-200 transition">
+            Explore Visuals
+          </a>
+          <a href="https://www.instagram.com/prajwal__achar__" target="_blank" class="px-5 py-2.5 rounded-lg border border-brand-border bg-brand-surface text-slate-200 font-semibold text-sm hover:border-slate-400 transition flex items-center gap-2">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            Instagram Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Gallery Section -->
+  <section id="gallery" class="py-16 px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div>
+        <span class="text-xs font-mono uppercase tracking-wider text-brand-gold">Curated Shots</span>
+        <h2 class="text-3xl font-bold tracking-tight text-white mt-1">Selected Frames</h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex items-center gap-2 bg-brand-surface p-1.5 rounded-xl border border-brand-border overflow-x-auto">
+        <button class="filter-btn active px-3.5 py-1.5 rounded-lg text-xs font-medium text-black bg-brand-gold transition" data-filter="all">All</button>
+        <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition" data-filter="peaks">Ridges</button>
+        <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition" data-filter="roads">Highways</button>
+        <button class="filter-btn px-3.5 py-1.5 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition" data-filter="mood">Mood</button>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="photo-grid">
+      <!-- Item 1 -->
+      <div class="photo-card peaks group relative rounded-xl overflow-hidden bg-brand-surface border border-brand-border cursor-pointer aspect-square"
+           onclick="openLightbox('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80', 'Misty Ghat Ridge', 'Western Ghats • 06:14 AM')">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" 
+             alt="Ridge view" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <p class="text-xs font-mono text-brand-gold">Western Ghats • 06:14 AM</p>
+          <h3 class="text-base font-bold text-white">Misty Ghat Ridge</h3>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="photo-card roads group relative rounded-xl overflow-hidden bg-brand-surface border border-brand-border cursor-pointer aspect-square"
+           onclick="openLightbox('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80', 'Sunset Tarmac', 'National Highway 48 • 05:45 PM')">
+        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" 
+             alt="Motorcycle ride" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <p class="text-xs font-mono text-brand-gold">NH 48 • 05:45 PM</p>
+          <h3 class="text-base font-bold text-white">Sunset Tarmac</h3>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="photo-card mood group relative rounded-xl overflow-hidden bg-brand-surface border border-brand-border cursor-pointer aspect-square"
+           onclick="openLightbox('https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=1200&q=80', 'Sunbeams in Deciduous Canopy', 'Chikmagalur Trails')">
+        <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?auto=format&fit=crop&w=800&q=80" 
+             alt="Canopy Light" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <p class="text-xs font-mono text-brand-gold">Chikmagalur Trails</p>
+          <h3 class="text-base font-bold text-white">Canopy Sunbeams</h3>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="photo-card peaks group relative rounded-xl overflow-hidden bg-brand-surface border border-brand-border cursor-pointer aspect-square"
+           onclick="openLightbox('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80', 'Cloud Sea at Dawn', 'Bababudangiri • 1,890m')">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" 
+             alt="Cloud sea" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <p class="text-xs font-mono text-brand-gold">Bababudangiri • 1,890m</p>
+          <h3 class="text-base font-bold text-white">Cloud Sea at Dawn</h3>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="photo-card roads group relative rounded-xl overflow-hidden bg-brand-surface border border-brand-border cursor-pointer aspect-square"
+           onclick="openLightbox('https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=1200&q=80', 'Dusk Pit Stop', 'Charmadi Ghats')">
+        <img src="https://images.unsplash.com/photo-1508873696983-2df5293cb32f?auto=format&fit=crop&w=800&q=80" 
+             alt="Bike pit stop" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <p class="text-xs font-mono text-brand-gold">Charmadi Ghats</p>
+          <h3 class="text-base font-bold text-white">Dusk Pit Stop</h3>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="photo-card mood group relative rounded-xl overflow-hidden bg-brand-surface border border-brand-border cursor-pointer aspect-square"
+           onclick="openLightbox('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80', 'Starlit Ridge Line', 'Camping Base')">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" 
+             alt="Starlit ridge" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-5 flex flex-col justify-end">
+          <p class="text-xs font-mono text-brand-gold">Camping Base</p>
+          <h3 class="text-base font-bold text-white">Starlit Ridge Line</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expeditions & Trail Log -->
+  <section id="expeditions" class="py-16 px-6 max-w-6xl mx-auto border-t border-brand-border">
+    <div class="mb-10">
+      <span class="text-xs font-mono uppercase tracking-wider text-brand-gold">Field Notes</span>
+      <h2 class="text-3xl font-bold tracking-tight text-white mt-1">Expedition Log</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-brand-surface border border-brand-border rounded-xl p-6 hover:border-slate-600 transition">
+        <div class="text-brand-gold mb-3"><i data-lucide="compass" class="w-6 h-6"></i></div>
+        <h4 class="text-lg font-bold text-white">Ettina Bhuja Peak</h4>
+        <p class="text-xs text-brand-muted font-mono mt-1">Chikmagalur / Monsoon Run</p>
+        <p class="text-sm text-slate-300 mt-4 leading-relaxed">
+          Dense fog envelope with gusts exceeding 40 km/h. Saturated green ridge walk captured on prime glass.
+        </p>
+      </div>
+
+      <div class="bg-brand-surface border border-brand-border rounded-xl p-6 hover:border-slate-600 transition">
+        <div class="text-brand-gold mb-3"><i data-lucide="mountain" class="w-6 h-6"></i></div>
+        <h4 class="text-lg font-bold text-white">Kaiwara Betta Ridge</h4>
+        <p class="text-xs text-brand-muted font-mono mt-1">Chikkaballapur / Sunrise Hike</p>
+        <p class="text-sm text-slate-300 mt-4 leading-relaxed">
+          Granite monoliths bathed in dry winter dawn warmth. Tested fast aperture portrait and panoramic framing.
+        </p>
+      </div>
+
+      <div class="bg-brand-surface border border-brand-border rounded-xl p-6 hover:border-slate-600 transition">
+        <div class="text-brand-gold mb-3"><i data-lucide="navigation" class="w-6 h-6"></i></div>
+        <h4 class="text-lg font-bold text-white">Mookanur Malai</h4>
+        <p class="text-xs text-brand-muted font-mono mt-1">Dharmapuri Range / Day Trek</p>
+        <p class="text-sm text-slate-300 mt-4 leading-relaxed">
+          Rugged ascent trail through thorny scrubland breaking into panoramic canyon outlooks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect / Instagram CTA -->
+  <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center border-t border-brand-border">
+    <div class="w-14 h-14 rounded-full bg-brand-surface border border-brand-border flex items-center justify-center mx-auto mb-6 text-brand-gold">
+      <i data-lucide="instagram" class="w-7 h-7"></i>
+    </div>
+
+    <h2 class="text-3xl font-extrabold text-white tracking-tight">Stay updated with new stories</h2>
+    <p class="text-slate-400 text-sm mt-3 max-w-md mx-auto">
+      Daily behind-the-scenes reels, gear setups, and route locations are posted on Instagram.
+    </p>
+
+    <div class="mt-8">
+      <a href="https://www.instagram.com/prajwal__achar__?stkn=ajU3aThqNnU4YTE=" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full font-bold text-sm bg-gradient-to-r from-amber-500 to-brand-gold text-black shadow-lg shadow-amber-500/20 hover:scale-105 transition-transform duration-200">
+        <i data-lucide="send" class="w-4 h-4"></i>
+        <span>Connect on Instagram (@prajwal__achar__)</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-4">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-slate-400 hover:text-white p-2">
+      <i data-lucide="x" class="w-7 h-7"></i>
+    </button>
+    <div class="max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
+      <img id="lightbox-img" src="" alt="Enlarged photo" class="max-h-[75vh] w-auto rounded-lg object-contain border border-brand-border">
+      <div class="mt-4 text-center">
+        <h3 id="lightbox-title" class="text-lg font-bold text-white"></h3>
+        <p id="lightbox-meta" class="text-xs font-mono text-brand-gold mt-1"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-brand-border/60 text-center text-xs text-brand-muted">
+    <p>&copy; 2026 Prajwal Achar. All visual works curated from the lens.</p>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Category Filter Functionality
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const photoCards = document.querySelectorAll('.photo-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-brand-gold', 'text-black', 'active');
+          b.classList.add('text-slate-400');
+        });
+        btn.classList.add('bg-brand-gold', 'text-black', 'active');
+        btn.classList.remove('text-slate-400');
+
+        const filter = btn.dataset.filter;
+        photoCards.forEach(card => {
+          if (filter === 'all' || card.classList.contains(filter)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Lightbox Controls
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxMeta = document.getElementById('lightbox-meta');
+
+    function openLightbox(src, title, meta) {
+      lightboxImg.src = src;
+      lightboxTitle.textContent = title;
+      lightboxMeta.textContent = meta;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  </script>
+</body>
+</html>
